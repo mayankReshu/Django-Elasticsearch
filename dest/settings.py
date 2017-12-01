@@ -73,13 +73,26 @@ WSGI_APPLICATION = 'dest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+#my local machine settings
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'des',
+#         'USER': 'postgres',
+#         'PASSWORD': 'main12345',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+#heroku settings
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'des',
-        'USER': 'postgres',
-        'PASSWORD': 'main12345',
-        'HOST': 'localhost',
+        'NAME': 'dbreoo7p6g1b61',
+        'USER': 'ximvhfsfolzmru',
+        'PASSWORD': '86df0d88d7bcdeb3242f720f9cdb884ed5a3be6ee45315fa389f798c8e61a7f4',
+        'HOST': 'ec2-23-21-155-53.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
